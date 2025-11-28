@@ -1,0 +1,56 @@
+/*
+  _     _            _                    _                         _                
+ | |__ | | __ _  ___| | _____ _ __   ___ | |_  __      ____ _ _   _| |__   __ _ _ __ 
+ | '_ \| |/ _` |/ __| |/ / __| '_ \ / _ \| __| \ \ /\ / / _` | | | | '_ \ / _` | '__|
+ | |_) | | (_| | (__|   <\__ \ |_) | (_) | |_   \ V  V / (_| | |_| | |_) | (_| | |   
+ |_.__/|_|\__,_|\___|_|\_\___/ .__/ \___/ \__|   \_/\_/ \__,_|\__, |_.__/ \__,_|_|   
+                             |_|                              |___/                  
+*/
+
+/* waybar background */
+window#waybar {
+	background-color: #1e1e1e;
+	border-bottom: 2px solid #333333;
+	color: #f2f2f2;
+	font-family: monospace;
+	font-size: 11pc;
+}
+
+/* workspaces */
+#workspaces button {
+	background: #1e1e1e;
+	border: 2px solid #333333;
+	color: #f2f2f2;
+	padding: 2px 8px;
+	margin: 0 2px;
+	box-shadow: none;
+}
+
+#workspaces button:hover {
+	background: #2a2a2a;
+	color: #f2f2f2;
+}
+
+#workspaces button.active {
+	background: #333333;
+	border: 2px solid #555555;
+	color: #f2f2f2;
+}
+
+/* clock */
+#clock {
+	background: #1e1e1e;
+	border: 2px solid #333333;
+	color: #f2f2f2;
+	padding: 2px 10px;
+	margin: 0 6px;
+}
+
+/* system tray */
+#tray {
+	background: #1e1e1e;
+	border: 2px solid #333333;
+	color: #f2f2f2;
+	padding: 2px 10px;
+	margin: 0 6px;
+}
