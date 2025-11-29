@@ -1,6 +1,22 @@
 {
 "layer": "top",
-"modules -left": ["hyprland/workspaces"],
-"modules-center": ["clock"],
-"modules-right": ["tray"]
+"position": "top",
+
+"modules-left": ["tray", "network"],
+"modules-center": ["hyprland/workspaces"],
+"modules-right": ["clock", "battery"]
+
+}
+
+"hyprland/workspaces": {
+"format": "{id}",
+"on-click": "activate",
+"on-scroll-down": "hyprctl dispatch workspace e+1",
+"on-scroll-up": "hyprctl dispatch workspace e-1"
+},
+
+"disable-scroll": false,
+"sort-by": "number",
+"persistent-only": true,
+"all-outputs": false
 }
