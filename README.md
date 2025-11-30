@@ -1,4 +1,4 @@
-blackspot 0.0.2
+blackspot 0.0.3
 Status: Early development
 -----------------------------------------------
   _     _            _                    _   
