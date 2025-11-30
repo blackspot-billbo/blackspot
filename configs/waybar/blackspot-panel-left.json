@@ -1,0 +1,49 @@
+{
+  "layer": "overlay",
+  "position": "left",
+  "exclusive": false,
+  "width": 56,
+
+  "margin-top": 12,
+  "margin-bottom": 432,
+  "margin-left": 12,
+  "margin-right": 0,
+
+  "modules-left": [
+    "custom/blackspot_about",
+    "custom/blackspot_sleep",
+    "custom/blackspot_restart",
+    "custom/blackspot_logout",
+    "custom/blackspot_shutdown"
+  ],
+
+  "custom/blackspot_about": {
+    "format": "● [ About ]",
+    "tooltip": "About Blackspot",
+    "on-click": "/home/bill/.config/waybar/blackspot_about.sh"
+  },
+
+  "custom/blackspot_sleep": {
+    "format": "⏾ [ Sleep ]",
+    "tooltip": "Sleep",
+    "on-click": "/home/bill/.config/waybar/blackspot_sleep.sh"
+  },
+
+  "custom/blackspot_restart": {
+    "format": "↻ [ Restart ]",
+    "tooltip": "Restart",
+    "on-click": "/home/bill/.config/waybar/blackspot_restart.sh"
+  },
+
+  "custom/blackspot_logout": {
+    "format": "⇦ [ Logout ]",
+    "tooltip": "Logout",
+    "on-click": "/home/bill/.config/waybar/blackspot_logout.sh"
+  },
+
+  "custom/blackspot_shutdown": {
+    "format": "⏻ [ Shutdown ]",
+    "tooltip": "Shutdown",
+    "on-click": "/home/bill/.config/waybar/blackspot_shutdown.sh"
+  }
+}

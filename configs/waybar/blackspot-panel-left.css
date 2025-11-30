@@ -1,0 +1,38 @@
+/* Blackspot Left Panel — floating system menu */
+
+/* Main panel */
+window#waybar {
+    background-color: rgba(30, 30, 30, 0.90);
+    color: #f2f2f2;
+    font-family: "JetBrainsMono Nerd Font", monospace;
+    font-size: 20px;   /* big, readable icons */
+
+    border: 2px solid #333333;
+    border-radius: 14px;
+
+    padding: 12px 16px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.4);
+}
+
+/* Individual items — NOTE: names match JSON custom/blackspot_* */
+#custom-blackspot_about,
+#custom-blackspot_sleep,
+#custom-blackspot_restart,
+#custom-blackspot_logout,
+#custom-blackspot_shutdown {
+    padding: 6px 12px;
+    margin: 14px 0;        /* ← MORE vertical spacing between icons */
+    color: #f2f2f2;
+    border-radius: 6px;
+    font-size: 11px;
+}
+
+/* Hover state */
+#custom-blackspot_about:hover,
+#custom-blackspot_sleep:hover,
+#custom-blackspot_restart:hover,
+#custom-blackspot_logout:hover,
+#custom-blackspot_shutdown:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+    color: #ffffff;
+}

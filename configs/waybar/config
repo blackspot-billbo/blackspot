@@ -1,22 +1,53 @@
 {
-"layer": "top",
-"position": "top",
+  "layer": "top",
+  "position": "top",
 
-"modules-left": ["tray", "network"],
-"modules-center": ["hyprland/workspaces"],
-"modules-right": ["clock", "battery"]
+  "margin-top": 10,
+  "margin-left": 40,
+  "margin-right": 40,
+  "margin-bottom": 0,
 
-}
+  "modules-left": [
+    "tray",
+	"custom/left_panel",
+	"clock"
+  ],
+  "modules-center": [
+    "hyprland/workspaces"
+  ],
+  "modules-right": [
+	"network",
+	 "battery"
+  ],
 
-"hyprland/workspaces": {
-"format": "{id}",
-"on-click": "activate",
-"on-scroll-down": "hyprctl dispatch workspace e+1",
-"on-scroll-up": "hyprctl dispatch workspace e-1"
+  "hyprland/workspaces": {
+    "format": "[ {id} ]",
+    "on-click": "activate",
+    "disable-scroll": false,
+    "sort-by": "number",
+    "persistent-only": true,
+    "all-outputs": false
+  },
+
+"custom/left_panel": {
+  "format": "●",
+  "tooltip": "Toggle Left Panel",
+  "on-click": "/home/bill/.config/waybar/toggle_left_panel.sh"
 },
 
-"disable-scroll": false,
-"sort-by": "number",
-"persistent-only": true,
-"all-outputs": false
+  "clock": {
+    "format": "[ {:%a %d %b %H:%M} ]"
+  },
+
+  "network": {
+    "format-wifi": "[ {essid} ]",
+    "format-ethernet": "[ eth ]",
+    "format-disconnected": "[ disconnected ]"
+  },
+
+  "battery": {
+    "format": "[ {capacity}% ]"
+  }
 }
+
+
